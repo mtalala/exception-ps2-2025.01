@@ -13,7 +13,7 @@ public class UserInterface {
         System.out.println("Bem-vindo ao sistema bancário");
         System.out.print("Vamos criar usa conta, informe seu nome: ");
         String holderName = input.nextLine();
-        int accountNumber = (new Random()).nextInt(1000, 9999);
+        int accountNumber = 1000 + (new Random()).nextInt(8999);
         System.out.println("Criamos uma conta com o número: " + accountNumber + ", com saldo igual a 0 (zero).");
         this.account = new BankAccount(accountNumber, 0, holderName);
     }
